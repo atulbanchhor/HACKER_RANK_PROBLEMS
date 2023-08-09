@@ -17,10 +17,10 @@ class Result {
 
     public static List<Integer> breakingRecords(List<Integer> scores) {
     // Write your code here
-    int min=scores.get(0);
+    int min=scores.get(0);                // first i just take scores[0] as min, max both and then for counting i declare the two var.
     int max=scores.get(0);
     int minCount=0,maxCount=0;
-    for(int i=0;i<scores.size();i++)
+    for(int i=0;i<scores.size();i++)      // traversed from 0 to end to check the condition if match then switch with it  
     {
         if(min>scores.get(i))
         {
